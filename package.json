@@ -1,0 +1,62 @@
+{
+  "name": "react-multistore",
+  "version": "0.1.0",
+  "description": "A lightweight model to manage a global store using React hooks",
+  "author": "Romain Vermeulen",
+  "license": "MIT",
+  "homepage": "https://github.com/romainv/react-multistore",
+  "bugs": {
+    "url": "https://github.com/romainv/react-multistore/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romainv/react-multistore.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "hooks",
+    "store",
+    "state management",
+    "redux"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "webpack --progress --color",
+    "upgrade": "multi-updates && npm install",
+    "lint": "eslint",
+    "start": "webpack serve --config example/webpack.config.js --progress"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "multi-updates": "^0.1.2",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "engines": {
+    "node": ">=12.20.0"
+  }
+}

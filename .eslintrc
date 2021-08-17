@@ -1,0 +1,25 @@
+ {
+	"rules": {
+		"strict": 0,
+		"prettier/prettier": "warn"
+	},
+	"env": {
+		"es2017": true,
+		"browser": true
+	},
+	"parser": "@babel/eslint-parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": [
+		"prettier"
+	]
+}
